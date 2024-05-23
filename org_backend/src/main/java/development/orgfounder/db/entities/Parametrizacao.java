@@ -47,7 +47,7 @@ public class Parametrizacao {
     private String logotipoG;
 
     @Column(name="logotipo_pequeno")
-    private String LogotipoP;
+    private String logotipoP;
 
 
     public Parametrizacao() {this(0L,"","","","","","","","","","","","");}
@@ -68,7 +68,7 @@ public class Parametrizacao {
         this.rua = rua;
         this.cep = cep;
         this.logotipoG = logotipoG;
-        LogotipoP = logotipoP;
+        this.logotipoP = logotipoP;
     }
 
 
@@ -169,10 +169,10 @@ public class Parametrizacao {
     }
 
     public String getLogotipoP() {
-        return LogotipoP;
+        return logotipoP;
     }
 
     public void setLogotipoP(String logotipoP) {
-        LogotipoP = logotipoP;
+        logotipoP = logotipoP;
     }
 }

@@ -8,17 +8,21 @@ import org.springframework.stereotype.Service;
 @Service
 public class ControleAcessoService {
 
-
     @Autowired
-    private ControleAcessoRepository controlerepo;
+    private ControleAcessoRepository repo;
 
     public ControleAcesso save(ControleAcesso controle){
-        return controlerepo.save(controle);
+        return repo.save(controle);
     }
 
     public ControleAcesso getById(Long id)
     {
-        return controlerepo.findById(id).get();
+        return repo.findById(id).get();
+    }
+
+    public ControleAcesso getByEmail(String email)
+    {
+        return repo.findByEmail(email);
     }
 
 

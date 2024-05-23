@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
 </head>
-<body>
-    
-    <h1>Corrente do Bem - 2024</h1>
+<body onload="verificaParametrizacao()">  
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Login </h1>
+            <img class="imagemL" src="https://github.com/github.png" alt="GitHub Logo">
+
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autofocus="true" maxlength="35"/>
+            <div class="validarForm" id="invalidMail" style="display: none">
+                <p>E-mail inválido, tente novamente!</p>
+            </div>
+
+            <label for="password" >Senha *</label>
+            <input type="password" id="pass" name="pass" placeholder="Digite sua senha" maxlength="35"/>
+            <div id="invalidPass" style="display: none">
+                <p>Senha invalida, tente novamente!</p>
+            </div>
+
+            <a href="/">Esqueci minha senha</a>
+            <input type="submit" onclick="validarCampos(event)" value="Acessar" class="btn" /> 
+            <p><span style="color: red; font-size:18px">*</span> Campo obrigatório</p>
+
+        </form>
+    </div>
 </body>
 </html>

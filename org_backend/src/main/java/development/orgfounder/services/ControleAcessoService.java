@@ -20,10 +20,10 @@ public class ControleAcessoService {
         return repo.findById(id).get();
     }
 
-    public ControleAcesso getByEmail(String email)
+    /*public ControleAcesso getByEmail(String email)
     {
         return repo.findByEmail(email);
-    }
+    }*/
 
 
 }

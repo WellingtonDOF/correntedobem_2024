@@ -35,7 +35,7 @@ public class AdminRestControllers {
             parametrizacao=new Parametrizacao();
         return new ResponseEntity<>(parametrizacao, HttpStatus.OK);
     }
-
+    /*
     @GetMapping("get-email")
     public ResponseEntity<Object> getLoginEmail(@RequestParam(value="email") String email,
                                                 @RequestParam(value = "pass") String senha)
